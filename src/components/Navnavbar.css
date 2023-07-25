@@ -1,0 +1,42 @@
+.logopng {
+  width: 100px;
+  height: 100px;
+}
+.navbg {
+  background-color: var(--bg-color);
+  border-bottom: 2px solid var(--txt-color);
+}
+.liststyle li {
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.liststyle .darkicon {
+  color: var(--txt-color);
+  border: 2px solid var(--txt-color);
+  fill: var(--text-color);
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+  padding-bottom: 6px;
+}
+.liststyle .darkicon:hover {
+  color: rgb(158, 158, 15);
+  border-color: rgb(158, 158, 15);
+}
+button.navbar-toggler {
+  font-size: 16px;
+  padding: 6px;
+  border: none;
+}
+button.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.fa {
+  color: var(--txt-color);
+}

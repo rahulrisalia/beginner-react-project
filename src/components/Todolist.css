@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.some {
+  background-color: var(--bg-color);
+}
+.mydiv {
+  min-height: 68vh;
+}
+.coll {
+  border: 2px solid var(--txt-color);
+  border-radius: 8px;
+}
+.heading {
+  font-family: "Kaushan Script", cursive;
+  color: var(--txt-color);
+}
+.mydiv button {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  color: var(--txt-color);
+}
+.mydiv input {
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  border: 1px solid var(--txt-color);
+}
+.mydiv input:focus {
+  outline: none;
+}
+.mydiv li {
+  /* justify-content: center; */
+  display: flex;
+  padding: 2px 30px 4px 10px;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid var(--txt-color);
+  margin-top: 10px;
+  text-align: justify;
+  overflow: hidden;
+  cursor: grab;
+  color: var(--txt-color);
+}
+.mydiv span {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  color: red;
+}
+.run {
+  color: #1b360f !important;
+  background-color: #d9e093;
+  border-color: red !important ;
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Satisfy&display=swap");
+.landing {
+  height: 80vh;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+.main {
+  font-family: "Lumanosimo", cursive;
+  width: 100%;
+  height: 10%;
+}
+.main text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 1;
+  stroke: var(--txt-color);
+  font-size: 9vw;
+}
+@keyframes stroke {
+  0% {
+    fill: var(--bg-color);
+    stroke: var(--txt-color);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 1;
+  }
+  70% {
+    fill: var(--bg-color);
+    stroke: var(--txt-color);
+  }
+  80% {
+    fill: var(--bg-color);
+    stroke: var(--txt-color);
+    stroke-width: 1;
+  }
+  100% {
+    fill: var(--txt-color);
+    stroke: var(--bg-color);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+/* --------------------------text styling----------------------*/
+.sub {
+  display: flex;
+  justify-content: center;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+  padding: 10px 0px 10px 0px;
+}
+.typewriter h1 {
+  font-family: "Caveat", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Satisfy", cursive;
+  font-size: 3vw;
+  overflow: hidden;
+  border-right: 0.15em solid var(--bg-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  color: rgb(132, 132, 132);
+  letter-spacing: 0.15em;
+  animation: typing 5s steps(30, end), blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    margin: 0 auto;
+  }
+  to {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--txt-color);
+  }
+}
